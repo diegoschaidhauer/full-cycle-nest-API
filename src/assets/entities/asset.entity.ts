@@ -4,7 +4,7 @@ import crypto from 'crypto'
 import { HydratedDocument } from 'mongoose';
 
 
-export type AssestDocument = HydratedDocument<Asset>;
+export type AssetsDocument = HydratedDocument<Asset>;
 
 @Schema({timestamps:true})
 export class Asset {
@@ -31,4 +31,4 @@ export class Asset {
 
 }
 
-export const AsserSchema = SchemaFactory.createForClass(Asset)
+export const AssetSchema = SchemaFactory.createForClass(Asset)
